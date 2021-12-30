@@ -24,6 +24,9 @@ function App() {
     }, 1500);
   }
 
+  // const sampleVar = process.env
+  // console.log("sample variable from env",sampleVar);
+
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
@@ -49,7 +52,7 @@ function App() {
         
           <Route exact path="/">
           <div className="container">
-        <TextForm showAlert = {showAlert} heading="Enter your text here" mode={mode} />
+        <TextForm showAlert = {showAlert} heading={`${process.env.REACT_APP_HEADING_SAMPLE}`} mode={mode} />
       </div>
           </Route>
         </Switch>
