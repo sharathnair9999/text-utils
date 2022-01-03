@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import TextForm from "./components/TextForm";
 import Alert from "./Alert";
 import About from "./components/About";
+import { properties } from "./properties/properties";
 import {
   BrowserRouter as Router,
   Switch,
@@ -52,7 +53,7 @@ function App() {
         
           <Route exact path="/">
           <div className="container">
-        <TextForm showAlert = {showAlert} heading={`${process.env.REACT_APP_HEADING_SAMPLE}`} mode={mode} />
+        <TextForm showAlert = {showAlert} heading={`${properties.sample_heading}`} mode={mode} />
       </div>
           </Route>
         </Switch>

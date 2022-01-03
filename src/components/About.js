@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { properties } from '../properties/properties'
 export default function About(props) {
   const myStyle = {
     color: props.mode==='dark'?'white':'black',
@@ -15,7 +15,7 @@ export default function About(props) {
       </h2>
       <div id="collapseOne" className="accordion-collapse collapse show" style = {myStyle} aria-labelledby="headingOne" data-bs-parent="#accordionExample">
         <div className="accordion-body">
-          You can change the case of your text from Uppercase to Lower or vice-versa.
+          {properties.accordian1}
          </div>
       </div>
     </div>
@@ -27,7 +27,7 @@ export default function About(props) {
       </h2>
       <div id="collapseTwo" className="accordion-collapse collapse" style = {myStyle} aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
         <div className="accordion-body">
-          The ability to copy the entered text on the textarea to the clipboard.
+          {properties.accordian2}
           </div>
       </div>
     </div>
@@ -39,7 +39,7 @@ export default function About(props) {
       </h2>
       <div id="collapseThree" className="accordion-collapse collapse" style = {myStyle} aria-labelledby="headingThree" data-bs-parent="#accordionExample">
         <div className="accordion-body">
-          This functionality lets you delete the extra spaces between words in the text.
+        {properties.accordian3}
            </div>
       </div>
     </div>
